@@ -12,14 +12,16 @@
             Products: ko.observableArray(),
             addform: {
                 name: ko.observable(""),
-                event: ko.observable("")
+                event: ko.observable(""),
+                place: ko.observable(""),
+                time: ko.observable("")
             }
         };
 
         
 
         function sendAjaxRequestHelper(httpMethod, callback, url, postData) {
-            $.ajax("/api/http://localhost:56100/Home/Index" + (url ? "/" + url : ""),
+            $.ajax("http://localhost:56100/Home/Index" + (url ? "/" + url : ""),
                 {
                     type: httpMethod, success: callback, data: postData
                 });
