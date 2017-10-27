@@ -21,7 +21,7 @@
         
 
         function sendAjaxRequestHelper(httpMethod, callback, url, postData) {
-            $.ajax("http://localhost:56100/Home/Index" + (url ? "/" + url : ""),
+            $.ajax("http://localhost:55770/api/Booking" + (url ? "/" + url : ""),
                 {
                     type: httpMethod, success: callback, data: postData
                 });
