@@ -23,9 +23,6 @@ namespace U2610172.Controllers
     [AllowCrossSiteJson]
     public class ProductController : ApiController
     {
-
-        public class BookingController : ApiController
-    {
         Repository _repo = Repository.GetRepo;
 
         [HttpGet]
