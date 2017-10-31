@@ -1,5 +1,4 @@
-﻿
-@{
+﻿@{
     ViewBag.Title = "Index";
 }
 
@@ -21,7 +20,7 @@
         
 
         function sendAjaxRequestHelper(httpMethod, callback, url, postData) {
-            $.ajax("http://localhost:55770/api/Booking" + (url ? "/" + url : ""),
+            $.ajax("http://localhost:55770/api/booking" + (url ? "/" + url : ""),
                 {
                     type: httpMethod, success: callback, data: postData
                 });
